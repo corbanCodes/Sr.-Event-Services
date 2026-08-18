@@ -1,0 +1,4 @@
+.DS_Store
+_generator/raw/
+_generator/sheets/
+_generator/__pycache__/
