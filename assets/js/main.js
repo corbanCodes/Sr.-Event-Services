@@ -6,6 +6,24 @@
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
+  /* ----- intro veil (home) + headline line reveals ----- */
+  var veil = document.querySelector(".intro-veil");
+  var introSeen = false;
+  try { introSeen = !!sessionStorage.getItem("ses-intro"); } catch (e) {}
+  if (veil && !introSeen && !reduced) {
+    setTimeout(function () {
+      veil.classList.add("lift");
+      document.body.classList.add("intro-done");
+      try { sessionStorage.setItem("ses-intro", "1"); } catch (e) {}
+      setTimeout(function () { veil.remove(); }, 1100);
+    }, 1600);
+  } else {
+    if (veil) veil.remove();
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { document.body.classList.add("intro-done"); });
+    });
+  }
+
   /* ----- header state + mobile nav ----- */
   var header = document.querySelector("header.site");
   var onScrollHeader = function () {
@@ -81,13 +99,18 @@
     });
   }
 
-  /* ----- scroll parallax: hero bg + .band backgrounds ----- */
+  /* ----- scroll parallax: hero bg + cinematic hero exit + .band backgrounds ----- */
   var bands = [].slice.call(document.querySelectorAll(".band .band-bg"));
+  var heroInner = document.querySelector(".hero-inner");
   function parallaxFrame() {
     var vh = window.innerHeight;
     if (heroBg) {
       var y = window.scrollY;
       heroBg.style.transform = "translate3d(0," + (y * 0.28).toFixed(1) + "px,0)";
+      if (heroInner && y < vh * 1.2) {
+        heroInner.style.opacity = Math.max(0, 1 - y / (vh * 0.85)).toFixed(3);
+        heroInner.style.transform = "translate3d(0," + (y * 0.16).toFixed(1) + "px,0)";
+      }
     }
     bands.forEach(function (bg) {
       var r = bg.parentElement.getBoundingClientRect();
@@ -128,6 +151,52 @@
       card.addEventListener("pointerleave", function () {
         card.style.transition = "transform .6s cubic-bezier(.2,.8,.2,1)";
         card.style.transform = "perspective(850px) rotateX(0deg) rotateY(0deg) translateY(0)";
+      });
+    });
+  }
+
+  /* ----- gold cursor halo (fine pointers only) ----- */
+  var ring = document.querySelector(".cursor-ring");
+  if (ring && finePointer && !reduced) {
+    var rx = -100, ry = -100, mx = -100, my = -100, ringRaf = null, ringOn = false;
+    function ringFrame() {
+      rx += (mx - rx) * 0.18;
+      ry += (my - ry) * 0.18;
+      ring.style.left = rx.toFixed(1) + "px";
+      ring.style.top = ry.toFixed(1) + "px";
+      if (Math.abs(mx - rx) > 0.3 || Math.abs(my - ry) > 0.3) {
+        ringRaf = requestAnimationFrame(ringFrame);
+      } else {
+        ringRaf = null;
+      }
+    }
+    window.addEventListener("pointermove", function (e) {
+      mx = e.clientX; my = e.clientY;
+      if (!ringOn) { ringOn = true; document.body.classList.add("cursor-on"); }
+      if (!ringRaf) ringRaf = requestAnimationFrame(ringFrame);
+    }, { passive: true });
+    document.addEventListener("mouseover", function (e) {
+      ring.classList.toggle("hot", !!e.target.closest("a, button, .tilt, input, select, textarea"));
+    });
+    document.addEventListener("mouseleave", function () {
+      document.body.classList.remove("cursor-on");
+      ringOn = false;
+    });
+  }
+
+  /* ----- magnetic buttons ----- */
+  if (finePointer && !reduced) {
+    [].slice.call(document.querySelectorAll(".btn")).forEach(function (btn) {
+      btn.addEventListener("pointermove", function (e) {
+        var r = btn.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+        var dy = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+        btn.style.transition = "transform .12s ease-out, box-shadow .35s";
+        btn.style.transform = "translate3d(" + (dx * 5).toFixed(1) + "px," + (dy * 4 - 2).toFixed(1) + "px,0)";
+      });
+      btn.addEventListener("pointerleave", function () {
+        btn.style.transition = "transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .35s";
+        btn.style.transform = "";
       });
     });
   }

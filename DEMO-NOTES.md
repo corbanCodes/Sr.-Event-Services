@@ -13,6 +13,11 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - Not-AI-looking / classy / 3D "images that move" → dark editorial design, pointer-parallax
   hero cards, tilt cards with glare, scroll parallax, film grain. Hand-rolled JS (no Three.js —
   full WebGL would read gimmicky and hurt mobile; can add if he pushes for more)
+- Luxury pass (18 Aug, after Corban review; referenced Death & Co's site): etched-coupe
+  intro veil w/ line-drawn monogram (once per session), headline line-mask reveals, gold
+  cursor halo + magnetic buttons (desktop), foil-gradient buttons w/ shine sweep, hairline
+  card frames, cinematic hero exit on scroll, slower italic marquee w/ ✦. Removed the small
+  caption text on the hero floating photos (Corban: felt off)
 
 ## Placeholders to replace
 
