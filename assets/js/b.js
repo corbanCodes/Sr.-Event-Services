@@ -186,6 +186,28 @@
     });
   }
 
+  /* ----- 3D tilt on the pour-list cards (same feel as concept A) ----- */
+  if (finePointer && !reduced) {
+    [].slice.call(document.querySelectorAll(".bp-card")).forEach(function (card) {
+      card.addEventListener("pointermove", function (e) {
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width;
+        var y = (e.clientY - r.top) / r.height;
+        var rx2 = ((0.5 - y) * 9).toFixed(2);
+        var ry2 = ((x - 0.5) * 11).toFixed(2);
+        card.style.transition = "transform .08s linear";
+        card.style.transform =
+          "perspective(900px) rotateX(" + rx2 + "deg) rotateY(" + ry2 + "deg) translateY(-6px)";
+        card.style.setProperty("--gx", (x * 100).toFixed(1) + "%");
+        card.style.setProperty("--gy", (y * 100).toFixed(1) + "%");
+      });
+      card.addEventListener("pointerleave", function () {
+        card.style.transition = "transform .65s cubic-bezier(.2,.8,.2,1)";
+        card.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0)";
+      });
+    });
+  }
+
   /* ----- gold cursor halo ----- */
   var ring = document.querySelector(".cursor-ring");
   if (ring && finePointer && !reduced) {

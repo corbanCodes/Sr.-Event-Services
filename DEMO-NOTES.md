@@ -19,6 +19,17 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
   card frames, cinematic hero exit on scroll, slower italic marquee w/ ✦. Removed the small
   caption text on the hero floating photos (Corban: felt off)
 
+## Concept A/B (added 20 Aug, pre-call)
+
+- Fixed toggle (top-left, bottom-left on mobile) flips between concept A (`/`) and
+  concept B (`/b.html`) so Sunny can compare live.
+- Concept B = award-style one-pager: Bodoni Moda/Marcellus/Plex Mono, WebGL gold-dust
+  field, Lenis inertia scroll, GSAP pinned horizontal drink rail + stacked package
+  cards + hover-reveal service rows, SR. counter preloader. `?skipintro` skips the
+  preloader (it also auto-skips once per session). Same Formspree + disclaimer.
+- B needs CDN (GSAP/Lenis/Three + Google Fonts) — fine on Netlify/localhost; page
+  still renders statically if CDNs are blocked.
+
 ## Placeholders to replace
 
 - **Drink list + photos**: Sunny and his daughter picked drinks; he's emailing pictures +

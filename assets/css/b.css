@@ -265,14 +265,23 @@ body.no-motion .bm-line { opacity: 1; transform: none; }
 }
 .bp-lead { flex: none; width: min(38vw, 30rem); }
 .bp-hint { display: block; margin-top: 1.6rem; color: var(--cream-faint); }
-.bp-card { flex: none; width: clamp(260px, 24vw, 380px); position: relative; }
-.bp-card:nth-child(odd) { transform: translateY(4vh); }
-.bp-card:nth-child(even) { transform: translateY(-3vh); }
+.bp-card {
+  flex: none; width: clamp(260px, 24vw, 380px); position: relative;
+  will-change: transform; transform-style: preserve-3d;
+}
+.bp-card:nth-child(odd) { margin-top: 4vh; }
+.bp-card:nth-child(even) { margin-top: -3vh; }
 .bpc-num { font-family: var(--mono); font-size: .68rem; letter-spacing: .2em; color: var(--gold); }
 .bpc-img {
   margin: .9rem 0 1.1rem; aspect-ratio: 4/5; overflow: hidden; border-radius: 4px;
-  border: 1px solid var(--gold-faint);
+  border: 1px solid var(--gold-faint); position: relative;
 }
+.bpc-img::after {
+  content: ""; position: absolute; inset: 0; z-index: 2; opacity: 0; pointer-events: none;
+  background: radial-gradient(480px circle at var(--gx, 50%) var(--gy, 50%), rgba(227,192,126,.22), transparent 46%);
+  transition: opacity .35s;
+}
+.bp-card:hover .bpc-img::after { opacity: 1; }
 .bpc-img img { width: 100%; height: 118%; object-fit: cover; will-change: transform; }
 .bp-card h3 {
   font-family: var(--display); font-variation-settings: "opsz" 60;
