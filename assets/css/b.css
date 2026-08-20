@@ -300,14 +300,21 @@ body.no-motion .bm-line { opacity: 1; transform: none; }
 .bs-pour:not(.js-pin) .bp-head { position: static; padding: 6rem var(--gutter) 0; }
 
 /* ---------- 04 · packages ---------- */
-.bs-packages { padding-top: clamp(6rem, 16vh, 12rem); }
+.bs-packages { padding-top: clamp(6rem, 16vh, 12rem); background: var(--ink); }
 .bk-head { padding: 0 var(--gutter) clamp(3rem, 8vh, 6rem); max-width: 90rem; margin: 0 auto; }
 .bk-card {
-  min-height: 92svh; display: flex; align-items: center;
+  min-height: 100svh; display: flex; align-items: center;
+  position: relative;
   background: var(--ink); border-top: 1px solid var(--gold-dim);
   will-change: transform;
 }
 .bk-card.bk-featured { background: var(--ink-2); }
+/* veil that dims the card as the next one slides over it — animated via --veil
+   (a plain filter here forces compositing flashes on some GPUs) */
+.bk-card::after {
+  content: ""; position: absolute; inset: 0; z-index: 5; pointer-events: none;
+  background: #0b0906; opacity: var(--veil, 0);
+}
 .bkc-inner {
   width: 100%; max-width: 90rem; margin: 0 auto;
   padding: clamp(3rem, 8vh, 6rem) var(--gutter);
@@ -332,7 +339,7 @@ body.no-motion .bm-line { opacity: 1; transform: none; }
   border-bottom: 1px solid var(--gold-faint); display: flex; gap: 1rem; align-items: baseline;
 }
 .bk-card li::before { content: "—"; color: var(--gold); }
-@media (max-width: 900px) {
+@media (max-width: 860px) {
   .bkc-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .bk-card { min-height: auto; }
 }

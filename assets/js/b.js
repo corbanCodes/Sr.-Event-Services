@@ -131,7 +131,7 @@
         });
         if (i < cards.length - 1) {
           gsap.to(card, {
-            scale: 0.93, filter: "brightness(0.5)",
+            scale: 0.95, "--veil": 0.55,
             transformOrigin: "center top", ease: "none",
             scrollTrigger: {
               trigger: cards[i + 1], start: "top bottom", end: "top top", scrub: true
