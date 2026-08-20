@@ -80,6 +80,27 @@ body.cursor-on .cursor-ring { opacity: 1; }
 .cursor-ring.hot { width: 54px; height: 54px; background: #e3c07e12; border-color: #e3c07e5e; }
 @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) { .cursor-ring { display: none } }
 
+/* ---------- concept A/B toggle ---------- */
+.ab-toggle {
+  position: fixed; z-index: 80; left: 1.3rem; top: 128px;
+  display: flex; align-items: center; gap: .15rem;
+  background: #0d0b08e6; border: 1px solid var(--line); border-radius: 100px;
+  padding: .3rem .4rem .3rem .85rem;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.ab-toggle .ab-label {
+  font-size: .6rem; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--cream-dim); margin-right: .5rem;
+}
+.ab-toggle a, .ab-toggle span.on {
+  display: grid; place-items: center; width: 30px; height: 30px;
+  border-radius: 50%; font-family: var(--serif); font-size: .92rem;
+  color: var(--cream-dim); border: 1px solid transparent;
+}
+.ab-toggle .on { background: var(--gold); color: var(--ink); font-weight: 600; }
+.ab-toggle a:not(.on):hover { border-color: var(--gold-dim); color: var(--gold-bright); }
+@media (max-width: 700px) { .ab-toggle { top: auto; bottom: 1.1rem; } }
+
 /* ---------- demo bar ---------- */
 .demo-bar {
   position: relative; z-index: 60;
