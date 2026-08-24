@@ -46,6 +46,20 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 5 (24 Aug) — TipsyTee IS the site now; concepts A/B removed
+
+- Client committed ("they bought") — concepts A and B deleted from the repo
+  (index/bartending/b.html + b assets). **TipsyTee now serves at the root** (`/`,
+  was /tipsytee.html) — ready for tipsyteebar.com to point at the deploy.
+  tipsyteebar.com still shows no DNS; if they bought it, nameservers aren't set yet.
+- "DEMO PREVIEW — the future tipsyteebar.com" strip removed. In its place: a
+  **dismissible banner** — "Partnered with Sr. Event Services — bartending, staffing,
+  and china rentals" (links sreventservices.com) with an × that hides it for the
+  session (sessionStorage).
+- `/c.html` (Sunny's light draft) still in repo, direct URL. 404.html still styled
+  by the old dark main.css — restyle whenever.
+- Asset URLs carry `?v=N` cache-busters now — bump on future JS/CSS edits.
+
 ## Round 4 (24 Aug) — spelling: TipsyTee, tipsyteebar.com
 
 - Brand is **TipsyTee Bar** (tee, not tea). Domain: **tipsyteebar.com** — still unregistered

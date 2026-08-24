@@ -229,6 +229,22 @@
     });
   });
 
+  /* ----- dismissible partner banner ----- */
+  var pb = document.getElementById("partner-banner");
+  if (pb) {
+    var pbGone = false;
+    try { pbGone = sessionStorage.getItem("pb-dismissed") === "1"; } catch (e) {}
+    if (pbGone) {
+      pb.remove();
+    } else {
+      var pbx = pb.querySelector(".pb-close");
+      if (pbx) pbx.addEventListener("click", function () {
+        pb.remove();
+        try { sessionStorage.setItem("pb-dismissed", "1"); } catch (e) {}
+      });
+    }
+  }
+
   /* ----- current year ----- */
   var yr = document.getElementById("yr");
   if (yr) yr.textContent = new Date().getFullYear();

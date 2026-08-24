@@ -71,6 +71,13 @@ h2.c-sec {
   text-align: center; padding: .5rem 1rem;
 }
 .demo-bar b { color: #e8c583; letter-spacing: .14em; }
+.demo-bar { position: relative; padding-right: 3rem; }
+.pb-close {
+  position: absolute; right: .7rem; top: 50%; transform: translateY(-50%);
+  background: none; border: 0; color: #cfc7bb; font-size: 1.15rem;
+  line-height: 1; cursor: pointer; padding: .25rem .55rem;
+}
+.pb-close:hover { color: #fff; }
 .demo-bar a { color: #e8c583; border-bottom: 1px solid #8a713f; }
 
 .ab-toggle {
