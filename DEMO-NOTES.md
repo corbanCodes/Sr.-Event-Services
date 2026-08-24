@@ -46,7 +46,20 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
-## Round 5 (24 Aug) — TipsyTee IS the site now; concepts A/B removed
+## Round 6 (24 Aug, FINAL — sale closed, $50/mo) — the shipped architecture
+
+- **Root (`/`) = TipsyTee Bar** (bright, unchanged content). **`/sr/` = SR Event Services**
+  — the black/gold concept A restored (Sunny picked it), with `/sr/bartending.html`.
+- **Two tabs at the top of every page** (TipsyTee Bar ⇄ SR Event Services) replace all
+  banners; TipsyTee is the default since tipsyteebar.com is the domain. The dismissible
+  partner banner is gone.
+- Brand is **"SR Event Services" — no period** (not an abbreviation of Senior). No
+  "catering" anywhere per client.
+- **Sunny's URL to hand out: tipsyteebar.com/sr/** (his sreventservices.com can redirect
+  there from his registrar). c.html (his old light draft) deleted — he chose option A.
+- Assets at ?v=3 cache-buster.
+
+## Round 5 (24 Aug) — TipsyTee IS the site now; concepts A/B removed (superseded)
 
 - Client committed ("they bought") — concepts A and B deleted from the repo
   (index/bartending/b.html + b assets). **TipsyTee now serves at the root** (`/`,
