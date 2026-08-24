@@ -201,7 +201,10 @@
     });
   }
 
-  /* ----- Formspree forms: AJAX submit + inline confirmation ----- */
+  /* ----- forms: AJAX submit + inline confirmation.
+     The HQ form endpoint lives on 60minutesites.com (cross-origin) and sends no
+     CORS headers, so we post in no-cors mode: the request is delivered and
+     processed, the response is opaque. A fulfilled fetch = sent. ----- */
   [].slice.call(document.querySelectorAll("form.quote-form")).forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -211,20 +214,15 @@
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
       fetch(form.action, {
         method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" }
-      }).then(function (res) {
-        if (res.ok) {
-          form.reset();
-          if (ok) ok.style.display = "block";
-          if (btn) btn.textContent = "Request sent ✓";
-        } else {
-          if (btn) { btn.disabled = false; btn.textContent = old; }
-          alert("Something went wrong — please call or email us directly.");
-        }
+        mode: "no-cors",
+        body: new FormData(form)
+      }).then(function () {
+        form.reset();
+        if (ok) ok.style.display = "block";
+        if (btn) btn.textContent = "Request sent ✓";
       }).catch(function () {
         if (btn) { btn.disabled = false; btn.textContent = old; }
-        alert("Something went wrong — please call or email us directly.");
+        alert("Something went wrong — please call or text us directly.");
       });
     });
   });
