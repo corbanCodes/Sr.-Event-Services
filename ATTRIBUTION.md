@@ -22,5 +22,8 @@ All drink photos are placeholders until Sunny's own drink list and photos arrive
 | `glassware.jpg` | www.Pixel.la Free Stock Photos | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3AAlcohol-bar-glass-shooters%20%2824218636552%29.jpg) |
 | `table-setting.jpg` | Michael Browning michaelwb | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3A11%20Depot%20St%2C%20Concord%2C%20United%20States%20%28Unsplash%29.jpg) |
 | `plated-service.jpg` | Jay Wennington jaywennington | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3AGourmet%20meal%20and%20white%20wine%20%28Unsplash%29.jpg) |
+| `c-team.jpg` | Crew crew | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3ABartenders%20serving%20cocktail%20%28Unsplash%29.jpg) |
+| `c-mule.jpg` | Dktue | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3AMoscow%20Mule%20in%20Venice.jpg) |
+| `c-paloma.jpg` | Andy Li | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3APaloma%20Spritz%20-%20Purezza%202024-12-17.jpg) |
 
 `.webp` files are re-encodes of the same originals and carry the same credit.
