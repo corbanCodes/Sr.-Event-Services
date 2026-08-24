@@ -46,6 +46,17 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 7 (24 Aug) — Sunny's logo + portrait removal
+
+- The "Friedrichs" bartender portrait is deleted from the repo (Sunny: people might
+  think it's him). Hero stack now = spritz + old fashioned, no faces, no third-party
+  branding. NOTE: the hero *background* still has a soft-focus bartender (Sylvarum
+  photo) — far less identifiable; swap to backbar.jpg if he wants zero faces.
+- His gold SR badge logo (from his text, AI-generated) lives at assets/img/sr-logo.png:
+  header wordmark badge (44px) + the intro veil on /sr/. Source IMG_2433.png still in
+  Corban's Downloads.
+- Tabs now read "TipsyT Bar" (not TipsyTee Bar) per Corban, all pages.
+
 ## Round 6 (24 Aug, FINAL — sale closed, $50/mo) — the shipped architecture
 
 - **Root (`/`) = TipsyTee Bar** (bright, unchanged content). **`/sr/` = SR Event Services**
