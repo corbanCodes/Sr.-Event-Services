@@ -46,6 +46,24 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Concept C — the two-site plan (24 Aug, after Sunny's second round of notes)
+
+They want TWO sites, both modeled on mobilemixologist.com (bright/friendly), cross-linked:
+
+- **TipsyTbar.com** (the priority — "her" bar site): demoed at `/tipsyt.html`. Craft mobile
+  bartending, blush-pink accent, bookings section (`#bookings`), links to Sr. Event Services
+  for staffing/china. **Domain unregistered as of 24 Aug (no DNS) — register it ASAP.**
+- **Sr. Event Services** (main/event site): demoed at `/c.html`. Staffing + china/tableware,
+  gold accent; bar-service card + partnership section route to TipsyT's bookings.
+- Both pages carry a top "site switcher" (TipsyT Bar ⇄ Sr. Event Services) simulating the
+  cross-domain links; at go-live these become real domain links and each page becomes its
+  own site/repo/Netlify deploy.
+- Concept toggle A/B/C on all pages; C entry point = TipsyT (their preference).
+- **No pricing anywhere** — Sunny: "the pricing won't transfer over." Bar pricing lives with
+  TipsyT off-site; both demos quote-on-request only.
+- Stock imagery approved by client for the bar ("just stock imagery bar is fine").
+- Sr. Event Services' own domain still unchosen — ask.
+
 ## Placeholders to replace
 
 - **Drink list + photos**: Sunny and his daughter picked drinks; he's emailing pictures +
