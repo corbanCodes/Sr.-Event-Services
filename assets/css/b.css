@@ -395,13 +395,18 @@ body.no-motion .bm-line { opacity: 1; transform: none; }
 .bb-dot { color: var(--gold-dim); font-size: .8rem; }
 .bb-form { margin-top: clamp(2.5rem, 7vh, 4.5rem); max-width: 64rem; }
 .bbf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem 2.5rem; }
-.bbf-grid input {
+.bbf-grid input, .bbf-grid select {
   background: transparent; border: 0; border-bottom: 1px solid var(--gold-dim);
   color: var(--cream); font: 400 1rem/1.4 var(--sans);
   padding: .8rem 0; border-radius: 0; transition: border-color .3s;
+  -webkit-appearance: none; appearance: none;
 }
+.bbf-grid select:invalid, .bbf-grid select option[value=""] { color: var(--cream-faint); }
+.bbf-grid select option { background: var(--ink-2); color: var(--cream); }
 .bbf-grid input::placeholder { color: var(--cream-faint); }
-.bbf-grid input:focus { outline: none; border-bottom-color: var(--gold); }
+.bbf-grid input:focus, .bbf-grid select:focus { outline: none; border-bottom-color: var(--gold); }
+.bk-terms { margin-top: 1.6rem; color: var(--cream-dim); }
+.bk-terms { letter-spacing: .2em; }
 .bbf-send { cursor: pointer; background: transparent; }
 .form-ok { display: none; margin-top: 1.2rem; font-family: var(--mono); font-size: .78rem; letter-spacing: .1em; color: var(--gold-bright); }
 .bbf-note {

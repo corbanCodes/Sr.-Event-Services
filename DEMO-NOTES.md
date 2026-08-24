@@ -30,6 +30,22 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - B needs CDN (GSAP/Lenis/Three + Google Fonts) — fine on Netlify/localhost; page
   still renders statically if CDNs are blocked.
 
+## Client notes from Sunny (implemented 24 Aug, both concepts)
+
+- **Staffing & crockery as on-page sections** on the bartending page (A: dedicated
+  `#staffing` + `#china` sections replacing the combined services grid, nav updated;
+  B: already chaptered sections, notes enriched)
+- **Domain: TipsyTbar.com** — Sunny's pick for the bartending domain. Not yet purchased/
+  wired; buy + point at Netlify at go-live. Site branding stays "Sr. Event Services"
+  until he says otherwise (ask whether TipsyT should appear on the site itself)
+- **Server questionnaire** — booking forms on both concepts now ask: servers needed,
+  service hours (6-hr minimum enforced via min=6), china preference, venue city
+  (A bartending form only for venue city; B has occasion field)
+- **6-hour minimum + travel fee** — stated in A's packages "Good to know" note, the
+  staffing section bullets, home booking card; B's packages terms line
+- **Premium White China & Gold Rim China** — named in A's `#china` section chips +
+  home card; B's crockery row + terms line + form select
+
 ## Placeholders to replace
 
 - **Drink list + photos**: Sunny and his daughter picked drinks; he's emailing pictures +
