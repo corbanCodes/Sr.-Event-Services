@@ -46,7 +46,14 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
-## Round 3 (24 Aug, daughter's notes) — TipsyTea, her own standalone link
+## Round 4 (24 Aug) — spelling: TipsyTee, tipsyteebar.com
+
+- Brand is **TipsyTee Bar** (tee, not tea). Domain: **tipsyteebar.com** — still unregistered
+  (verified no DNS 24 Aug) — register ASAP.
+- Top wordmark stays **"TipsyT"** (Tipsy + just the T) per her instruction, even though the
+  domain spells out tipsyteebar.com. Her link renamed again: **/tipsytee.html**.
+
+## Round 3 (24 Aug, daughter's notes) — TipsyTea, her own standalone link (superseded spelling)
 
 - Brand is **TipsyTea**, domain **tipsyteabar.com** (she also said "tipsyteabaring.com"
   once — assumed typo, CONFIRM). tipsyteabar.com unregistered as of 24 Aug — register ASAP.
