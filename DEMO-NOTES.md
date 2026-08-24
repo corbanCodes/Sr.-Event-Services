@@ -46,6 +46,25 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 3 (24 Aug, daughter's notes) — TipsyTea, her own standalone link
+
+- Brand is **TipsyTea**, domain **tipsyteabar.com** (she also said "tipsyteabaring.com"
+  once — assumed typo, CONFIRM). tipsyteabar.com unregistered as of 24 Aug — register ASAP.
+- **sreventservices.com is already live** (minimal "Crafting Unforgettable Moments" landing
+  page + contact form — presumably Sunny's). The eventual Sr. Event Services rebuild
+  replaces that site.
+- Concept C = **TipsyTea only** now: `/tipsytea.html` (renamed from tipsyt.html), her own
+  shareable link with NO concept toggle, NO site switcher, no Sr. Event Services
+  section/nav — partner appears by name only: demo strip reads "partnered with
+  Sr. Event Services — staffing, china, catering & more" → links sreventservices.com;
+  small footer mention + the form's "add staffing & china" option.
+- `/c.html` (light Sr. Event Services draft) kept in repo for Sunny's separate track —
+  reachable by direct URL only.
+- Concept A hero → "The **service** your guests remember." (she liked both lines; "bar"
+  version still lives on the B concept + TipsyTea contexts).
+- Going forward Sunny and the daughter are separate tracks: he'll spec Sr. Event Services,
+  she'll spec TipsyTea individually.
+
 ## Concept C — the two-site plan (24 Aug, after Sunny's second round of notes)
 
 They want TWO sites, both modeled on mobilemixologist.com (bright/friendly), cross-linked:
