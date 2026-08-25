@@ -46,6 +46,17 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 8 (24 Aug) — service area (SEO + trust)
+
+- Client gave the service area at last (it was an open question from the intake call):
+  **Sacramento region, all of the Central Valley & the Bay Area.** Added to SR pages in
+  four places: footer blurb (both pages), the About/intro section, the contact card
+  (replaces the "Booking now" label, keeps 6-hr + travel fee beneath), and both meta
+  descriptions.
+- Also added a minimal **LocalBusiness JSON-LD** on /sr/ with `areaServed` for the three
+  regions + name/phone/email/logo — verified facts only, no address or ratings invented.
+  Add a street address + hours if he ever wants a Google Business Profile match.
+
 ## Round 7 (24 Aug) — Sunny's logo + portrait removal
 
 - The "Friedrichs" bartender portrait is deleted from the repo (Sunny: people might
