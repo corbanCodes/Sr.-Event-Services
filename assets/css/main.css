@@ -291,7 +291,14 @@ body.intro-done .hero-stack { opacity: 1; }
 body.intro-done .hero .kicker { transition-delay: .08s; }
 body.intro-done .hero .lede, body.intro-done .page-hero .lede { transition-delay: .3s; }
 body.intro-done .hero-ctas, body.intro-done .page-hero .hero-ctas { transition-delay: .46s; }
-body.intro-done .hero-meta { transition-delay: .6s; }
+body.intro-done .hero-link {
+  align-self: center; font-size: .78rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--cream-dim);
+  border-bottom: 1px solid var(--gold-dim); padding-bottom: .2rem;
+  transition: color .25s, border-color .25s;
+}
+.hero-link:hover { color: var(--gold-bright); border-color: var(--gold); }
+.hero-meta { transition-delay: .6s; }
 .hero .lede { font-size: 1.08rem; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.3rem; }
 .hero-meta {
