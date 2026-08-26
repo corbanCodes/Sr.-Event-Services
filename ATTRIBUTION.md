@@ -10,8 +10,6 @@ All drink photos are placeholders until Sunny's own drink list and photos arrive
 
 | File | Credit | Licence | Source |
 |---|---|---|---|
-| `hero-bar.jpg` | Kartoman | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3ABartender%20at%20Sylvarum%20cocktail%20bar%2C%20Alicante.jpg) |
-| `backbar.jpg` | Daniel Rueda | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3ACocktail%20%28249195241%29.jpeg) |
 | `drink-old-fashioned.jpg` | Edcross | Public domain | [Commons](https://commons.wikimedia.org/wiki/File%3AOldfashioned-cocktail.png) |
 | `drink-espresso-martini.jpg` | Missvain | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3AEspresso%20martini%20-%20November%202024%20-%20Sarah%20Stierch.jpg) |
 | `drink-mojito.jpg` | https://unsplash.com/@varshesh | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File%3ACocktail%20Mojito.jpg) |

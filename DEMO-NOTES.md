@@ -46,6 +46,26 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 9 (24 Aug) — SR strips bar content entirely
+
+Client: SR is now **staffing + china + crockery only**. Implemented:
+- **`sr/bartending.html` DELETED** (its good #staffing and #china sections were folded into
+  sr/index.html first). `_redirects` sends /sr/bartending.html -> /sr/ (301).
+- Removed from SR: drinks grid, bar packages, drink menu, bar-service CTAs, bar hero.
+  `hero-bar.*` and `backbar.*` deleted from the repo (unused by either site now) and
+  dropped from credits/ATTRIBUTION. Drink photos kept — they belong to TipsyT's side.
+- New SR structure: hero (table setting) / marquee of services / 01 The service +
+  service area / 02 What we provide (staffing, Crockery Hire, glassware) + partner note /
+  03 Event staffing / band quote / 04 China & crockery / 05 Contact + questionnaire.
+- **"Mobile bar" appears exactly twice** (partner note heading + footer), per his
+  "once or twice" instruction. Bar interest routes to TipsyT: partner block with a
+  "Visit TipsyT Bar" button, plus footer link — 4 links out to `/` total.
+- Form keeps his phone + email and the full questionnaire (servers, hours, china
+  preference, venue city); bar/package fields removed.
+- **Imagery is thin**: only 3 usable non-bar photos exist (table-setting, plated-service,
+  glassware) so they repeat across sections. Commons has nothing decent for event
+  china/staffing — REAL PHOTOS OF HIS CHINA + STAFF ARE THE REAL FIX. Ask Sunny.
+
 ## Round 8 (24 Aug) — service area (SEO + trust)
 
 - Client gave the service area at last (it was an open question from the intake call):
