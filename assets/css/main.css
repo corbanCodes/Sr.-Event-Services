@@ -336,6 +336,11 @@ body.intro-done .hero-link {
 .fc-3 small { display: block; color: var(--cream-dim); font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; margin-top: .2rem; }
 
 @media (max-width: 900px) {
+  /* his hero photo is busy/bright — deepen the scrim so the copy stays legible */
+  .hero-shade {
+    background:
+      linear-gradient(180deg, #14110de0 0%, #14110dc4 42%, #14110dd6 72%, var(--ink) 100%);
+  }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-stack { height: 380px; max-width: 430px; }
 }
@@ -494,6 +499,17 @@ body.intro-done .hero-link {
 .partner-note p b { font-family: var(--sans); font-size: inherit; font-weight: 700; color: var(--cream); }
 .partner-note .btn { flex: none; margin: 0; }
 
+/* hero: logo medallion in place of the photo cards */
+.float-card.fc-logo {
+  width: 58%; right: 16%; top: 6%; height: auto;
+  background: none; border: 0; box-shadow: none; border-radius: 50%; overflow: visible;
+}
+.float-card.fc-logo::after { display: none; }
+.float-card.fc-logo img {
+  width: 100%; height: auto; border-radius: 50%;
+  box-shadow: 0 0 0 1px #c8a25e40, 0 34px 80px -24px rgba(0,0,0,.9);
+}
+
 /* ---------- services ---------- */
 .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; margin-top: 3.2rem; }
 .svc {
@@ -507,6 +523,22 @@ body.intro-done .hero-link {
 .svc .s-body { padding: 1.5rem 1.6rem 1.7rem; }
 .svc h3 { font-size: 1.35rem; font-weight: 430; }
 .svc p { color: var(--cream-dim); font-size: .9rem; margin-top: .45rem; }
+/* image-less service cards */
+.svc-grid.plain .svc { display: flex; }
+.svc-grid.plain .s-body { padding: 2.1rem 1.8rem 1.9rem; display: flex; flex-direction: column; width: 100%; }
+.s-num {
+  display: block; font-family: var(--serif); font-style: italic; font-weight: 300;
+  font-size: 1rem; color: var(--gold-dim); letter-spacing: .08em; margin-bottom: .7rem;
+}
+.s-more {
+  margin-top: auto; padding-top: 1.4rem;
+  display: inline-flex; align-items: center; gap: .55rem;
+  font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.s-more .ar { transition: transform .3s; }
+.svc:hover .s-more .ar { transform: translateX(4px); }
+
 @media (max-width: 900px) { .svc-grid { grid-template-columns: 1fr; max-width: 520px; } }
 
 /* ---------- steps (bartending page) ---------- */

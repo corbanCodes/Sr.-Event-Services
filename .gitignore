@@ -2,3 +2,9 @@
 _generator/raw/
 _generator/sheets/
 _generator/__pycache__/
+
+# Client source material — kept locally, never deployed.
+# This repo IS the Netlify publish root, so anything committed here is publicly
+# downloadable. His .docx holds private client messages + phone screenshots.
+*.docx
+_generator/view/

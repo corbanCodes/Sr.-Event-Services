@@ -46,6 +46,39 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 10 (16 Sep) — Sunny's Word-doc edit list + HIS OWN PHOTOS
+
+Delivered as `edits for sr event services.docx` (kept in repo root). Images were extracted
+losslessly from the docx zip (word/media/) — never screenshot-recaptured. Source doc also
+holds his annotated phone screenshots showing what to cut.
+
+- **Brand renamed: SR Event Services -> `S_R_EventServices`** across the SR pages only
+  (his reason: "so it doesn't read as Senior event service"). Header sub-line
+  "Staffing & Tableware" -> **"Event Staffing & Resources"**.
+  NOTE: TipsyT's site still says "SR Event Services" in its partner references — Corban to
+  confirm whether her side should change too.
+- **New logo** (his gold SR medallion) replaces the old one: header badge, intro veil, and
+  now a large floating medallion in the hero where the stock photo cards used to be
+  ("Remove the image and use my logo").
+- **What we provide** rebuilt: Event Staffing / Tableware Rentals / **Bartending Services**
+  (added as a full main card per his #4). "Glassware, plates & cups" card removed. Cards are
+  text-only — images removed per his #5. The old separate TipsyT partner block was folded
+  into the Bartending card ("keep it simple").
+  ** NOTE THE REVERSAL:** on 24 Aug he had us strip ALL bar content from SR; this list adds
+  Bartending back as a main service. Latest instruction wins, TipsyT link retained.
+- **"China" removed** from all visible copy (chips are now "Premium White" / "Gold Rim";
+  form field renamed china_preference -> tableware_preference).
+- **Crockery Hire -> Tableware Rentals** everywhere (supersedes the 24 Aug rename), incl.
+  the section anchor #crockery -> #tableware.
+- **Removed per his red-X screenshot:** the scrolling marquee strip and the "01 The service"
+  statement. Section 01 is now a compact "Where we serve" block (service area + signature).
+- **HIS REAL PHOTOS now carry the site** — the stock-photo problem is solved:
+  `sr-hero` (ballroom, hero bg), `sr-staffing` (outdoor reception, staffing section),
+  `sr-tableware` (place settings, tableware section), `sr-band` (his lit mobile bar at
+  night, quote band). No stock imagery remains on the SR pages. Credited as client-owned in
+  credits.html + ATTRIBUTION.md (NOT Commons).
+- Mobile hero scrim deepened — his ballroom photo is brighter than the old stock shot.
+
 ## Round 9 (24 Aug) — SR strips bar content entirely
 
 Client: SR is now **staffing + china + crockery only**. Implemented:

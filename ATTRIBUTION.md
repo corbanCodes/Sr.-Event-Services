@@ -1,5 +1,10 @@
 # Image attribution
 
+**Client-supplied assets (not Commons):** `sr-logo.*`, `sr-hero.*`, `sr-staffing.*`,
+`sr-tableware.*` and `sr-band.*` are S_R_EventServices' own logo and event photographs,
+supplied by the client in September 2026 and extracted at full resolution from his Word
+document. They are his property — no Wikimedia licence applies.
+
 Every photograph in `assets/img/` came from [Wikimedia Commons](https://commons.wikimedia.org)
 filtered to licences that permit commercial use (CC0, CC BY, CC BY-SA and public domain), then
 cropped, colour-corrected and compressed locally. Each one was reviewed by eye on a contact
