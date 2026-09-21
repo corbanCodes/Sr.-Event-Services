@@ -46,6 +46,24 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 11 (21 Sep) — doc 2: copy, rules, GALLERY of all his photos, new domain
+
+Source: `2 - edits for sr event services.docx` (gitignored via *.docx). 14 images
+extracted losslessly from word/media/.
+- **Domain moved to tipsytbar.com** (Corban bought it; tipsyteebar.com being cancelled).
+  All site references updated on both pages — Sunny's URL is now **tipsytbar.com/sr/**.
+- His copy placed verbatim: hero support line, What-we-provide line, tableware caption,
+  24-hour reply note in the form (confirmation text changed to match), footer trust line.
+- Tableware card + section 04 replaced with his exact text.
+- **New business rule: tableware is only rented WITH staffing.** Removed the old line
+  "rent on their own or with staffing", which contradicted it.
+- **Gallery (section 05 "Our collection")**: every photo he has sent across both docs is
+  now on his page — 5-pattern White & Gold Rim collection (his label text re-set as HTML
+  captions, label bar trimmed; his watermarks kept) + 11 setups with a lightbox. His
+  Pearl White set replaces the ballroom crop in section 04.
+- Footer brand spelled S_R_EventServices (his message said "S_R_ Event Services" but his
+  own photo watermarks spell it with no space).
+
 ## Round 10 (16 Sep) — Sunny's Word-doc edit list + HIS OWN PHOTOS
 
 Delivered as `edits for sr event services.docx` (kept in repo root). Images were extracted

@@ -243,6 +243,63 @@
     }
   }
 
+  /* ----- gallery lightbox (links still open the full image with JS off) ----- */
+  var lbLinks = [].slice.call(document.querySelectorAll("#gallery a.lb"));
+  if (lbLinks.length) {
+    var box = document.createElement("div");
+    box.className = "lbox";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", "Photo viewer");
+    box.innerHTML = '<button class="lbox-close" aria-label="Close">&times;</button>' +
+      '<button class="lbox-prev" aria-label="Previous photo">&lsaquo;</button>' +
+      '<img alt=""><p class="lbox-cap"></p><p class="lbox-count"></p>' +
+      '<button class="lbox-next" aria-label="Next photo">&rsaquo;</button>';
+    document.body.appendChild(box);
+    var bImg = box.querySelector("img"), bCap = box.querySelector(".lbox-cap"),
+        bCount = box.querySelector(".lbox-count"), cur = 0, lastFocus = null;
+    var show = function (i) {
+      cur = (i + lbLinks.length) % lbLinks.length;
+      var a = lbLinks[cur];
+      bImg.src = a.getAttribute("href");
+      bImg.alt = a.getAttribute("data-cap") || "";
+      bCap.innerHTML = a.getAttribute("data-cap") || "";
+      bCount.textContent = (cur + 1) + " / " + lbLinks.length;
+    };
+    var open = function (i) {
+      lastFocus = document.activeElement;
+      show(i); box.classList.add("open");
+      document.body.style.overflow = "hidden";
+      box.querySelector(".lbox-close").focus();
+    };
+    var close = function () {
+      box.classList.remove("open"); document.body.style.overflow = "";
+      bImg.removeAttribute("src");
+      if (lastFocus) lastFocus.focus();
+    };
+    lbLinks.forEach(function (a, i) {
+      a.addEventListener("click", function (e) { e.preventDefault(); open(i); });
+    });
+    box.querySelector(".lbox-close").addEventListener("click", close);
+    box.querySelector(".lbox-prev").addEventListener("click", function () { show(cur - 1); });
+    box.querySelector(".lbox-next").addEventListener("click", function () { show(cur + 1); });
+    box.addEventListener("click", function (e) { if (e.target === box) close(); });
+    document.addEventListener("keydown", function (e) {
+      if (!box.classList.contains("open")) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") show(cur + 1);
+      else if (e.key === "ArrowLeft") show(cur - 1);
+    });
+    var sx = null;
+    box.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
+    box.addEventListener("touchend", function (e) {
+      if (sx === null) return;
+      var dx = e.changedTouches[0].clientX - sx;
+      if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1));
+      sx = null;
+    });
+  }
+
   /* ----- current year ----- */
   var yr = document.getElementById("yr");
   if (yr) yr.textContent = new Date().getFullYear();
