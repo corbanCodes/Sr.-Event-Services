@@ -46,6 +46,18 @@ Built 18 Aug 2026 from the intake call. Call scheduled 2PM EST / 11AM PT with Su
 - **Premium White China & Gold Rim China** — named in A's `#china` section chips +
   home card; B's crockery row + terms line + form select
 
+## Round 12 (22 Sep) — "Setups" grid removed
+
+Sunny: "That's just too many pictures and it looks cluttered... just remove it completely."
+- Removed ONLY the `Setups` sub-heading + its 11-photo grid from section 05. His five
+  labelled White & Gold Rim pattern shots stay, and so does the lightbox (now 1-5).
+- Section 05 heading/lede reworded (they referenced setups); redundant sub-heading dropped.
+- Photos used elsewhere are untouched: hero, staffing, quote band and the tableware
+  feature all still use his sr-*.jpg files (separate from the gallery copies).
+- **The 11 setup images are still in `assets/img/gallery/` (s01-s11), just unreferenced** —
+  this client reverses often, so restoring the grid is a copy-paste job. Delete them if
+  you ever want the repo lean.
+
 ## Round 11 (21 Sep) — doc 2: copy, rules, GALLERY of all his photos, new domain
 
 Source: `2 - edits for sr event services.docx` (gitignored via *.docx). 14 images
